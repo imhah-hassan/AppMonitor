@@ -1,12 +1,12 @@
 *** Settings ***
-Library           Browser           auto_closing_level=MANUAL   enable_presenter_mode={"duration": "300 milliseconds", "width": "3px", "style": "dotted", "color": "red"}
+Library           Browser           auto_closing_level=SUITE
+# enable_presenter_mode={"duration": "300 milliseconds", "width": "3px", "style": "dotted", "color": "red"}
 
 *** Test Cases ***
 CCF Home Page
     New Browser                chromium
     New Page                   https://mabanque.ccf.fr
     Wait For Response
-    Sleep                      3 s
     ${url}       Get Url
     IF    "${url}" == "https://mabanque.ccf.fr/public/attente"
         Log To Console    Message d'attente
