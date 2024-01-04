@@ -18,7 +18,7 @@ CCF Check FAQ
     ${url}       Get Url
     IF    "${url}" != "https://mabanque.ccf.fr/public/attente"
         Run Keyword And Continue On Failure     Get Text    contextualized-faq-banner ux-text[tag='p']      ==      Ces sujets pourraient vous intéresser
-        Run Keyword And Continue On Failure     Get Text    div#st-faq-context button span.question-item-title>>nth=0                ==     Comment me connecter à mon Espace Client CCF la première fois ?
+        Run Keyword And Continue On Failure     Get Text    div#st-faq-context button span.question-item-title>>nth=0                ==     Comment se connecter à mon Espace Client CCF la première fois ?
         Run Keyword And Continue On Failure     Get Text    div#st-faq-context button span.question-item-title>>nth=1                ==     Identifiant de connexion perdu ou oublié : comment le retrouver ?
         Run Keyword And Continue On Failure     Get Text    div#st-faq-context button span.question-item-title>>nth=3                ==     Mot de passe oublié : Comment le réinitialiser?
         Run Keyword And Continue On Failure     Get Text    div#st-faq-context button span.question-item-title>>nth=2                ==     Accès bloqué : Comment procéder ?
